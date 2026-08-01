@@ -49,6 +49,8 @@ app.get('/', (req, res) => {
 </html>`);
 });
 
-app.listen(PORT, () => {
+// 0.0.0.0 para que el servidor sea alcanzable desde fuera del contenedor
+// (Replit, Render y cualquier plataforma en la nube lo necesitan; en local es indiferente).
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
