@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Cambia esta línea para probar el redespliegue automático.
-const VERSION = 'v1';
+const VERSION = 'v2';
 
 app.get('/', (req, res) => {
   res.send(`<!doctype html>
